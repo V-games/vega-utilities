@@ -1,0 +1,33 @@
+:root{
+    --vg-primary:#094284;
+    --vg-primary-h: #043373 ;
+    --vg-primary-a: #002461 ;
+    --vg-secundary: #ebebeb ;
+    --vg-secundary-bg: #e5e5e5 ;
+    --vg-secundary-h: #c5c5c5 ;
+    --vg-secundary-a: #a8a8a8 ;
+    --vg-primary-str:#00a2ff;
+    --vg-secundary-o:#0F0F0F;
+    --vg-primary-bg:#043373;
+    --vg-darkMode-bg:#08080b;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.vg-w50{
+    width: 50%;
+}
+.vg-w100{
+    width: 100%;
+}
+
+.vg-flex{
+
+    display: flex;
+
+}
+.vg-circle{
+    border-radius: 50%;
+}
