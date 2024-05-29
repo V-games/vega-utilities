@@ -11,15 +11,16 @@
 
 
 .contenedor-carrusel{
-    width: fit-content;
+    width: 100%;
+    height: 100%;
     display: flex;
     user-select: none;
 }
 
 .contenedor-imagen{
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 
 .carrusel-imagen{
@@ -38,19 +39,26 @@
     animation: animacion-imagen-carrusel 1s ease forwards;
 }
 
-.carrusel-titulo{
+.carrusel-contenedor-titulo{
     position: absolute;
     width: 100%;
     justify-content: center;
-    margin-top: 60%;
-    padding-top: 20%;
+    align-items:flex-end;
     display: flex;
     height: 20%;
     background: linear-gradient(to top ,black 5%, transparent);
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease;
+    height: 100%;
 }
+
+.carrusel-titulo{
+
+    margin-bottom: 50px;
+    
+}
+
 .icon-arrow{
     cursor: pointer;
     color: white;
@@ -91,9 +99,53 @@
 
 
 }
-.contenedor-imagen:hover .carrusel-titulo{
+.contenedor-imagen:hover .carrusel-contenedor-titulo{
     opacity: 1;
 }
 .contenedor-imagen:hover .contenedor-arrow-left{
     opacity: 1;
+}
+
+.carruselT-contenedor{
+
+    width: 100%;
+    height: 400px;
+
+}
+
+.contenedorT-imagenes{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.contenedorT-imagen{
+    width: 33%;
+    height: 100%;
+    padding: 20px;
+    
+}
+
+.ct-imagen{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.carruselT-button{
+    
+    color: black;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contenedorT-imagenes:hover .carruselT-button{
+
+    opacity: 1;
+
 }

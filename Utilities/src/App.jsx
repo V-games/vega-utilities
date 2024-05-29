@@ -1,14 +1,13 @@
 import './App.css'
-import {NavWithUserVg} from "./comp/navbar/navbar"
-import  CarruselNormal  from './comp/carruseles/carrusel.jsx';
+import { NavWithUserVg } from "./comp/navbar/navbar"
+import { CarruselNormal, CarruselTriple }  from './comp/carruseles/carrusel.jsx';
 
 function App() {
 
   return <>
       <NavWithUserVg />
-      
-      <CarruselNormal />
-
+  
+      <CarruselTriple />
   </>
 }
 
